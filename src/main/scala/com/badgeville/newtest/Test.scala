@@ -11,6 +11,7 @@ import com.twitter.finagle.http.{Request, Response}
 import com.twitter.util.{Await, Future}
 
 object Test extends App {
+  println("Starting Finagle");
   val port = new InetSocketAddress(2002)
  // val client:Service[Request,Response]=Http.newService("www.google.com:80")
   val service= new SimpleService
